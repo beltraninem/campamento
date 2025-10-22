@@ -19,12 +19,12 @@
         </nav>
     </header>
 <h1> San Vicente de Chucurí </h1>
-<img src="https://imagescdn.citix.com.co/citix/production/tours/b84bca95-4a7d-4a04-8d1a-010ac3ac49d0/bccec25355c93362777eba386fe7e1dd.jpg" width="800" height="500">
+<img src="https://imagescdn.citix.com.co/citix/production/tours/b84bca95-4a7d-4a04-8d1a-010ac3ac49d0/bccec25355c93362777eba386fe7e1dd.jpg" width="700" height="500">
 
 <h2 id="historia"> Historia del municipio </h2>
 <p> San Vicente de Chucurí fue fundado el 7 de septiembre de 1876 por Sacramento Tristancho, aunque inicialmente el caserío se conocía como “La Angostura”. Más tarde, el 6 de
      octubre de 1881 fue elevado a aldea y finalmente adquirió la categoría de municipio el 30 de septiembre de 1887. </p>
-     <img src="https://i.pinimg.com/736x/e8/40/6a/e8406a0dfbb5118f05f0e1a1a51e3f05.jpg" width="800" height="500">
+     <img src="c:\Users\ESTUDIANTES\Desktop\images (4).jpg" width="800" height="500">
 
 <p> El nombre combina el de su santo patrono, San Vicente Ferrer, y la palabra Chucurí, de origen indígena (Yariguí) que algunos interpretan como “canto del cielo” Durante su evolución histórica, el pueblo mantuvo su tradicional 
      plaza con calles empedradas y su primer alcalde fue su mismo fundador. En el siglo XX se construyeron la primera iglesia (1878), líneas de teléfono y telégrafo (1908-1916), 
@@ -142,7 +142,123 @@ y se prepara a partir de maíz previamente precocido en agua con cenizas de made
  <h2>Arepa santanderiana</h2>
  <p>la arepa santandereana es típica de Santander, Colombia, con raíces indígenas. Se caracteriza por su textura crocante y sabor intenso gracias al chicharrón y la cocción en leña.</p>
 <img src="descarga (3).jpeg">
+<section id="comentarios">
+    <h2>🤝 Cuestionario de Experiencia de Usuario</h2>
+    <div class="feedback-container">
+        
+        <form id="feedbackForm" action="/enviar-feedback" method="POST">
+            
+            <div class="form-group">
+                <label>1. ¿Cómo calificarías la página en general? (Diseño y Contenido)</label>
+                <div class="star-rating" required>
+                    <input type="radio" id="star5" name="calificacion" value="5" />
+                    <label for="star5" title="Excelente (5 estrellas)">★</label>
+                    <input type="radio" id="star4" name="calificacion" value="4" />
+                    <label for="star4" title="Muy Buena (4 estrellas)">★</label>
+                    <input type="radio" id="star3" name="calificacion" value="3" />
+                    <label for="star3" title="Buena (3 estrellas)">★</label>
+                    <input type="radio" id="star2" name="calificacion" value="2" />
+                    <label for="star2" title="Regular (2 estrellas)">★</label>
+                    <input type="radio" id="star1" name="calificacion" value="1" />
+                    <label for="star1" title="Mala (1 estrella)">★</label>
+                </div>
+            </div>
 
+            <div class="form-group">
+                <label>2. ¿Te resultó fácil navegar por el sitio y encontrar la información?</label>
+                <div class="option-group">
+                    <input type="radio" id="nav_muy_facil" name="navegacion" value="Muy Fácil" required>
+                    <label for="nav_muy_facil">Muy Fácil</label>
+                    
+                    <input type="radio" id="nav_facil" name="navegacion" value="Fácil">
+                    <label for="nav_facil">Fácil</label>
+                    
+                    <input type="radio" id="nav_regular" name="navegacion" value="Regular">
+                    <label for="nav_regular">Regular</label>
+                    
+                    <input type="radio" id="nav_dificil" name="navegacion" value="Difícil">
+                    <label for="nav_dificil">Difícil</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>3. ¿Qué tan claro y agradable te pareció el diseño visual de la página?</label>
+                <div class="option-group">
+                    <input type="radio" id="vis_excelente" name="claridad_visual" value="Excelente" required>
+                    <label for="vis_excelente">Excelente</label>
+                    
+                    <input type="radio" id="vis_buena" name="claridad_visual" value="Buena">
+                    <label for="vis_buena">Buena</label>
+                    
+                    <input type="radio" id="vis_mejorable" name="claridad_visual" value="Mejorable">
+                    <label for="vis_mejorable">Mejorable</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>4. ¿El contenido sobre San Vicente de Chucurí fue útil para ti?</label>
+                <div class="radio-group">
+                    <input type="radio" id="cont_si" name="contenido_util" value="si" required>
+                    <label for="cont_si">Sí, muy útil</label>
+                    
+                    <input type="radio" id="cont_parcial" name="contenido_util" value="parcial">
+                    <label for="cont_parcial">Parcialmente</label>
+                    
+                    <input type="radio" id="cont_no" name="contenido_util" value="no">
+                    <label for="cont_no">No mucho</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sugerencia">5. Comentarios detallados y sugerencias (Máx. 500 caracteres):</label>
+                <textarea id="sugerencia" name="sugerencia" rows="5" maxlength="500" placeholder="Escribe aquí tu opinión sobre qué te gustó o qué se podría mejorar..." required></textarea>
+                <p id="charCounter" class="nota-contador">500 caracteres restantes.</p>
+            </div>
+
+            <button type="submit">Enviar Respuestas</button>
+        </form>
+        
+        <p class="nota">Tu opinión es vital para mejorar nuestra página Ecolifestyle.</p>
+        
+    </div>
+    
+    <div id="thankYouMessage" class="thank-you-message">
+        <h3>¡Comentario Enviado! 🎉</h3>
+        <p>Tu feedback ha sido registrado con éxito. ¡Muchas gracias por ayudarnos a mejorar!</p>
+    </div>
+
+</section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('feedbackForm');
+            const textarea = document.getElementById('sugerencia');
+            const charCounter = document.getElementById('charCounter');
+            const thankYou = document.getElementById('thankYouMessage');
+            const maxChars = 500;
+
+            // Contador de Caracteres
+            textarea.addEventListener('input', function() {
+                const currentLength = textarea.value.length;
+                const remaining = maxChars - currentLength;
+                charCounter.textContent = `${remaining} caracteres restantes.`;
+            });
+
+            // Manejo de Envío (Simulado)
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); 
+                
+                // Simulación de éxito: Oculta el formulario y muestra el mensaje
+                form.style.display = 'none';
+                thankYou.style.display = 'block';
+                
+                // Desplazamiento suave hacia el mensaje de agradecimiento
+                thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+            
+            charCounter.textContent = `${maxChars} caracteres restantes.`;
+        });
+    </script>
 
 
 
